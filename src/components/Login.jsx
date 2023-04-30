@@ -46,6 +46,7 @@ function Login() {
       }
     }
   };
+
   return (
     <div className="flex justify-center items-center pt-20">
       <form
@@ -53,7 +54,7 @@ function Login() {
         className="bg-white p-8 rounded-lg shadow-lg"
         noValidate
       >
-        <h2 className="text-2xl font-bold mb-4">Register</h2>
+        <h2 className="text-2xl font-bold mb-4">Login</h2>
         <div className="mb-4">
           <label htmlFor="email" className="block text-gray-700 font-bold mb-2">
             Email
