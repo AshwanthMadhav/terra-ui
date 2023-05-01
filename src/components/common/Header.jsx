@@ -6,6 +6,7 @@ function Header() {
   const { auth, setAuth } = useContext(AuthContext);
 
   const handleLogout = () => {
+    localStorage.removeItem('token')
     setAuth(null);
   };
 
@@ -42,7 +43,7 @@ function Header() {
                 </Link>
               </li>
               <li className="ml-6">
-                <Link to="/login" className="text-white" onClick={handleLogout}>
+                <Link to="/" className="text-white" onClick={handleLogout}>
                   Logout
                 </Link>
               </li>
